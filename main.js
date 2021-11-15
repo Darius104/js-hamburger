@@ -1,8 +1,8 @@
 let ham = document.getElementsByClassName('hamburger-menu')[0];
-let hRight = document.getElementsByClassName('header-right')[0];
+let clickh = document.getElementsByClassName('fas fa-bars')[0];
 let cl = document.getElementsByClassName('close')[0];
 
-hRight.addEventListener('click',
+clickh.addEventListener('click',
     function(){
         ham.style.display = 'block';
     }
