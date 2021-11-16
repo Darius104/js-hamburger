@@ -1,15 +1,14 @@
-let ham = document.getElementsByClassName('hamburger-menu')[0];
-let clickh = document.getElementsByClassName('fas fa-bars')[0];
-let cl = document.getElementsByClassName('close')[0];
-
-clickh.addEventListener('click',
-    function(){
-        ham.style.display = 'block';
+const burgerButton = document.querySelector('.header-right > a');
+burgerButton.addEventListener('click',
+    function() {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        hamburgerMenu.classList.add('active');
     }
-)
-
-cl.addEventListener('click',
-    function(){
-        ham.style.display = 'none';
+);
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click',
+    function() {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        hamburgerMenu.classList.remove('active');
     }
-)
+);
